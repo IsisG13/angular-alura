@@ -2,6 +2,12 @@
   <header>
     <section class="cabecalho-link">
       <img src="/assets/logo.png" alt="" />
+      <div>
+        <button>
+          <img class="seta" src="/assets/Imagens /arrow-left.png" alt="" />
+          <a href="/lista-contatos"> Voltar </a>
+        </button>
+      </div>
     </section>
     <section class="cabecalho-contato">
       <img src="/assets/Imagens /adicionar-contato.png" alt="" />
@@ -86,7 +92,8 @@
         <button
           [disabled]="contatoForm.invalid"
           [ngClass]="contatoForm.valid ? 'botao-salvar' : 'botao-desabilitado'"
-          type="submit">
+          type="submit"
+        >
           Salvar contato
         </button>
       </section>
