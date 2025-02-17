@@ -33,7 +33,10 @@ export class ListaContatosComponent implements OnInit {
 
   filtroPorTexto: string = ''
 
-  constructor(private contatoService: ContatoService) {
+  constructor(
+    private contatoService: ContatoService
+
+  ) {
   }
 
   ngOnInit() {
